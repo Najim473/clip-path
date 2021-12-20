@@ -1,0 +1,38 @@
+    body {
+        background: linear-gradient(rgba(3, 252, 69, 0.69) 0%, rgba(15, 3, 252, 0.52) 100%) no-repeat 50% 50% / 100% 100%;
+        justify-items: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        display: grid;
+        font-family: 'Nunito', 'sans-serif';
+    }
+    
+    .inner {
+        background: rgb(15, 3, 252);
+        padding: 1em;
+        border-radius: 10px;
+        width: 250px;
+        clip-path: circle(10% at 90% 20%);
+        transition: all.5s ease-in-out;
+        cursor: pointer;
+        P {
+            color: black;
+            font-size: 20px;
+        }
+        h1 {
+            color: black;
+            margin: 0;
+        }
+        &:hover {
+            clip-path: circle(75%);
+            background-color: white;
+        }
+        span {
+            float: right;
+            color: white;
+            font-weight: bold;
+            margin: 4%;
+            position: relative;
+        }
+    }
